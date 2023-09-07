@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+  var body: some View {
+    VStack {
+      Text("Hello, SwiftUI!")
+        .font(.largeTitle)
         .padding()
+      Image(systemName: "star.fill")
+        .resizable()
+        .scaledToFit()
+        .frame(width: 100, height: 100)
+      SecondaryView()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
